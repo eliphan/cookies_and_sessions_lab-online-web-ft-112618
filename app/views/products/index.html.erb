@@ -2,3 +2,8 @@
 <li><%= item %></li>
 <% end %>
 </ul>
+
+<%= form_tag products_path do %>
+  <input name=item>
+  <input type=submit value='add to cart'>
+<% end %>
