@@ -2,3 +2,10 @@
 <li><%= item %></li>
 <% end %>
 </ul>
+
+<%= form_for cart do |f| %>
+<%= f.label "Items" %>
+<%= f.text_field :item %>
+
+<%= f.submit %>
+<% end %>
