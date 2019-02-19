@@ -1,5 +1,9 @@
 class ProductController < ApplicationController
   def index
-    render template 'products/index'
+  end
+  
+  def add_item_to_cart
+    @item = Item.find(params[:id])
+    cart << @item.id
   end
 end
